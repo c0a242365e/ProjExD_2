@@ -29,6 +29,10 @@ def check_bound(rct: pg.Rect) -> tuple[bool,bool]:
     return yoko, tate  #横縦の画面内判定結果を返す
 
 def gameover(screen: pg.Surface) -> None:
+    """
+    引数：screen
+    戻り値：なし
+    """
     kk_cry_img = pg.transform.rotozoom(pg.image.load("fig/8.png"), 0, 1.0)
     kk_cry_rct = kk_cry_img.get_rect()
     kk_cry_rct.center = 800,250
